@@ -1,7 +1,7 @@
 {
-  "name": "TFG-Bike3S",
+  "name": "markdown-latex-book",
   "version": "1.0.0",
-  "description": "Bike3S-memory",
+  "description": "markdown-latex-book",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cruizba/TFG-Bike3S.git"
+    "url": "git+https://github.com/cruizba/markdown-to-latex-book.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cruizba/TFG-Bike3S/issues"
+    "url": "https://github.com/cruizba/markdown-to-latex-book/issues"
   },
-  "homepage": "https://github.com/cruizba/TFG-Bike3S#readme",
+  "homepage": "https://github.com/cruizba/markdown-to-latex-book#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
