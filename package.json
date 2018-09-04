@@ -1,0 +1,29 @@
+{
+  "name": "TFG-Bike3S",
+  "version": "1.0.0",
+  "description": "Bike3S-memory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "./node_modules/nodemon/bin/nodemon.js -e js,md,bib,tex server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruizba/TFG-Bike3S.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cruizba/TFG-Bike3S/issues"
+  },
+  "homepage": "https://github.com/cruizba/TFG-Bike3S#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "log-timestamp": "^0.1.2",
+    "path": "^0.12.7",
+    "reload": "^2.3.1"
+  }
+}
