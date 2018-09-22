@@ -1,15 +1,28 @@
 \usepackage{sectsty} 
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \sectionfont{\clearpage}
 
 \usepackage{fancyhdr}
+\usepackage[ruled,vlined]{algorithm2e}
+
+% Overwrite \begin{figure}[htbp] with \begin{figure}[H]
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
  
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE,RO]{}
-\fancyhead[RE,LO]{You're name}
+\fancyhead[RE,LO]{Title of the book}
 \fancyfoot[CE,CO]{}
 \fancyfoot[LE,CO]{\thepage}
 
-\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\baselinestretch}{1}
 \setlength{\parskip}{12.5pt}
+
+\newcommand*{\secref}[1]{~\ref{#1}}

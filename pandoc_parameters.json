@@ -1,0 +1,13 @@
+{
+    "input": "book.md",
+    "output": "book.pdf",
+    "parameters": [
+        {"argName": "-V", "argValue": "geometry:margin=1.25in"},
+        {"argName": "-V", "argValue": "fontsize=11pt"},
+        {"argName": "--bibliography", "argValue": "bibliography.bib"},
+        {"argName": "--csl", "argValue": "ieee.csl"},
+        {"argName": "--toc"},
+        {"argName": "--include-in-header", "argValue": "titlesec.tex"},
+        {"argName": "--number-sections"}
+    ]
+}

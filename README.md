@@ -23,5 +23,3 @@ The markdown file to edit is in `/document/book.md`. Just execute in the project
 # TO DO
 
 - Docker for easy use and installation.
-
-- Configuration file for pdf customization.
