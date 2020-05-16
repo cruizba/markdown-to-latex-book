@@ -20,6 +20,7 @@
   "homepage": "https://github.com/cruizba/markdown-to-latex-book#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chokidar": "^3.4.0",
     "express": "^4.16.3",
     "http": "0.0.0",
     "log-timestamp": "^0.1.2",

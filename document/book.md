@@ -10,7 +10,7 @@ date: The date
 
 # Summary {-}
 
-Summary of your book
+Summary of your book.
 
 >
 
@@ -42,7 +42,7 @@ Class aptent taciti sociosqu[^1] ad litora torquent per conubia nostra, per ince
 
 ## Reference to an image
 
-This is a reference to an image [Image 1](#fig:1)
+This is a reference to an image [@fig:1]
 
 ## Reference to bibliography
 

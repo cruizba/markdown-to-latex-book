@@ -7,7 +7,7 @@ const http = require('http');
 const reload = require('reload');
 const path = require('path');
 const app = express();
-
+const chokidar = require('chokidar');
 const pandocParameters = JSON.parse(fs.readFileSync(__dirname + "/pandoc_parameters.json"));
 
 console.log(`Watching for file changes on ${document}`);
@@ -22,15 +22,21 @@ createPdf().then(() => {
     app.listen(3000, () => console.log('Server started at localhost:3000'));
     let server = http.createServer(app);
     let reloadServer = reload(app);
-    fs.watchFile(document, (curr, prev) => {
-        console.log(`${document} file Changed`);
+    const chokidarProperties = {
+        ignored: [
+            "./document/book.pdf",
+            "./node_modules/"
+        ]
+    }
+    chokidar.watch('.', chokidarProperties).on('change', (event, path) => {
+        console.log(`Change detected`);
         createPdf().then(() => {
             reloadServer.reload();
         }).catch((error) => {
             console.log(error);
-        })
+        });
     });
-})
+});
 
 function createCommand() {
     let command = [pandocParameters.input];

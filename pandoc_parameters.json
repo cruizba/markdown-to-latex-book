@@ -2,6 +2,7 @@
     "input": "book.md",
     "output": "book.pdf",
     "parameters": [
+        {"argName": "-F", "argValue": "pandoc-crossref"},
         {"argName": "-V", "argValue": "geometry:margin=1.25in"},
         {"argName": "-V", "argValue": "fontsize=11pt"},
         {"argName": "--bibliography", "argValue": "bibliography.bib"},
